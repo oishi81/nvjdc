@@ -54,10 +54,10 @@ wget -O Config.json  https://raw.githubusercontent.com/shidahuilang/nvjdc/main/C
 wget -O Config.json   https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/nvjdc/main/Config.json
 ```
 
-6 回到nolanjdc目录创建chromium文件夹并进入
+6 回到nvjdc目录创建chromium文件夹并进入
 
 ```
-cd /root/nolanjdc && mkdir -p  .local-chromium/Linux-884014 && cd .local-chromium/Linux-884014
+cd /root/nvjdc && mkdir -p  .local-chromium/Linux-884014 && cd .local-chromium/Linux-884014
 ```
 
 7下载 chromium 
@@ -83,7 +83,7 @@ cd  /root/nvjdc
 10启动镜像
 
 ```
-sudo docker run   --name nolanjdc -p 5701:80 -d  -v  "$(pwd)":/app \
+sudo docker run   --name nvjdc -p 5701:80 -d  -v  "$(pwd)":/app \
 -v /etc/localtime:/etc/localtime:ro \
 -it --privileged=true  nolanhzy/nvjdc:latest
 ```
@@ -133,7 +133,7 @@ git clone https://github.com/shidahuilang/nvjdc.git /root/nvjdc
 
 删除容器
 ```
-docker rm -f nvnjdc 
+docker rm -f nvjdc 
 ```
 然后从步骤9开始即可
 
