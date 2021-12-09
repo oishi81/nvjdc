@@ -10,7 +10,6 @@ bash -c "$(curl -fsSL git.io/J1pMg)"
 
 ## docker安装教程
 
-如果你是装过NVjdc 先看看后面1.2以前如何更新之1.2升级说明
 
 1拉源码
 国内
@@ -23,7 +22,7 @@ git clone https://github.com/shidahuilang/nvjdc.git /root/nvjdc
 ```
 
 
-2 拉取基础镜像以后不需要拉取镜像了 如果需要拉取我会通知
+2 拉取基础镜像
 ```
 sudo docker pull nolanhzy/nvjdc:latest
 ```
@@ -99,45 +98,6 @@ docker logs -f nvjdc
 出现 NETJDC  started 即可 
 
 
-## 1.2以前如何更新之1.2
-如果你是装过NVjdc 并且root下存在nvjdc 文件夹
-
-并且你的浏览器和配置已经在/root/nvjdc文件下了
-
-
-请你将你现有的/root/nvjdc更换名称 如nvjdc1
-```
-mv /root/nvjdc /root/nvjdc1
-```
-
-然后执行步骤一 拉取代码
-国内
-```
-git clone https://ghproxy.com/https://github.com/shidahuilang/nvjdc.git /root/nvjdc
-```
-国外
-```
-git clone https://github.com/shidahuilang/nvjdc.git /root/nvjdc
-```
-
-
-然后将刚刚更换名称文件夹 如nvjdc1中的 配置文件放到/root/nvjdc/Config 文件夹中
-```
- cd /root/nvjdc &&  mkdir -p  Config &&  mv /root/nvjdc1/Config.json /root/nvjdc/Config/Config.json
-```
-
-将刚刚更换名称文件夹 如nvjdc1 中的浏览器所有文件放到/root/nvjdc/.local-chromium/Linux-884014 文件夹中
-```
- cd /root/nvjdc &&    mv /root/nvjdc1/.local-chromium /root/nvjdc/.local-chromium
-```
-
-删除容器
-```
-docker rm -f nvjdc 
-```
-然后从步骤9开始即可
-
-后续更新只需要按照下方代码更新即可
 
 
 ## 更新
