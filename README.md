@@ -24,7 +24,7 @@ git clone https://github.com/shidahuilang/nvjdc.git /root/nvjdc
 
 2 拉取基础镜像
 ```
-sudo docker pull nolanhzy/nvjdc:latest
+sudo docker pull shidahuilang/nvjdc:latest
 ```
 
 3 执行命令
@@ -84,7 +84,7 @@ cd  /root/nvjdc
 ```
 sudo docker run   --name nvjdc -p 5701:80 -d  -v  "$(pwd)":/app \
 -v /etc/localtime:/etc/localtime:ro \
--it --privileged=true  nolanhzy/nvjdc:latest
+-it --privileged=true  shidahuilang/nvjdc
 ```
 
 11查看 日志 
