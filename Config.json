@@ -40,19 +40,19 @@ cat > ${Config}/Config.json << EOF
       //序号必填从1 开始
       "QLkey": 1,
       //服务器名称
-      "QLName": "${MANEID}",
+      "QLName": "",
       //青龙地址
-      "QLurl": "${QLurl}",
+      "QLurl": "",
       //青龙2,9 OpenApi Client ID
-      "QL_CLIENTID": "${CLIENTID}",
+      "QL_CLIENTID": "",
       //青龙2,9 OpenApi Client Secret
-      "QL_SECRET": "${CLIENTID_SECRET}",
+      "QL_SECRET": "",
       //CK最大数量
-      "QL_CAPACITY": ${CAPACITY},
+      "QL_CAPACITY": ,
       ///建议一个青龙一个WxPusher 应用
       "WP_APP_TOKEN": ""
     }
   ]
 
 }
-EOF
+
